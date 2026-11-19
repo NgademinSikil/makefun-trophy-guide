@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · PS5 · All 55 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: official names, descriptions and grades, a checklist saved in the browser, a roadmap to the Platinum, missable flags, and a sourced guide to every trophy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c2410c'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23fef08a' font-family='serif'%3E%E2%98%85%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline guide &amp; tracker</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">All 55 official trophies — 1 Platinum, 2 Gold, 6 Silver, 46 Bronze · 28 hidden · 0 online · about 200 hours to the Platinum</p>
+  </div>
+  <div class="progress-box" aria-live="polite">
+    <p class="progress-line"><strong id="progressText">0 of 55 earned</strong> · <span id="progressPct">0%</span></p>
+    <div class="progress-bar"><div id="progressFill"></div></div>
+    <p class="grade-counts" id="gradeCounts"></p>
+    <p class="save-note">Progress is saved in this browser only. Nothing leaves your device.</p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Guide sections">
+  <button type="button" data-view="checklist" class="tab active" id="tab-checklist">Checklist</button>
+  <button type="button" data-view="roadmap" class="tab" id="tab-roadmap">Roadmap to Platinum</button>
+  <button type="button" data-view="missable" class="tab" id="tab-missable">Missable &amp; time-sensitive</button>
+  <button type="button" data-view="sources" class="tab" id="tab-sources">Sources</button>
+</nav>
+
+<section id="view-checklist" class="view">
+  <div class="controls">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission or place…" autocomplete="off"></label>
+    <label>Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+    <label class="check"><input id="hideSpoilers" type="checkbox" checked> Hide story spoilers</label>
+    <span class="spacer"></span>
+    <button id="exportBtn" type="button">Export progress</button>
+    <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button">Reset</button>
+  </div>
+  <div class="kind-chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+  <p class="list-meta" id="listMeta"></p>
+  <p class="online-note" id="onlineNote" hidden>There are <strong>no online trophies</strong> in Grand Theft Auto VI at launch — all 55 unlock in single-player. That is why this filter is empty.</p>
+  <div class="layout">
+    <main>
+      <ol class="trophy-list" id="trophyList"></ol>
+    </main>
+    <aside class="detail" id="detail" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section id="view-roadmap" class="view" hidden>
+  <h2>Roadmap to the Platinum — <em>Vice Got a Price!</em></h2>
+  <p class="lede">One playthrough is enough. There is no mission replay and no New Game Plus, so the saves you keep matter more than the order you play in. Work the five stages in order; the long counters fill in as you travel.</p>
+  <ol class="roadmap" id="roadmapList"></ol>
+  <h3>The 100% checklist (A Long Road)</h3>
+  <p>Open it in game at <strong>Progress &gt; Stats &gt; 100% Completion</strong> after the story. It needs, in full: all 8 bank vaults and all 39 gang operations, the underwater discoveries, every Shooting Range gold medal, all drone races and Bret&rsquo;s 15 Target Decks. The rest is a share: 100 optional missions, 200 of 277 vehicles, 100 of 255 animals, 15 of 18 meditations, 70 of 80 challenges, 300 stunts and 100 WAiNK scans. Nothing on it is missable.</p>
+  <h3>Save discipline</h3>
+  <ul>
+    <li>Keep one manual save at the start of every chapter (15 manual slots plus one autosave).</li>
+    <li>Keep one untouched save from just before the final mission.</li>
+    <li>Never use cheats on your trophy save — they switch off trophies and saving.</li>
+    <li>Turn on progress and collectible notifications in Settings so counters stay visible.</li>
+  </ul>
+</section>
+
+<section id="view-missable" class="view" hidden>
+  <h2>Missable &amp; time-sensitive trophies</h2>
+  <p class="lede">Built from the official descriptions and the launch-week guides. Only one trophy can actually be missed; one more has a time-sensitive step.</p>
+  <div id="missableList"></div>
+  <h3>What cannot be missed</h3>
+  <p>Every story trophy, every side-story finale (Andy, Kenton, Billy, Randy, Tyrone, Bret) and every free-roam trophy stays available after the credits. The 100% checklist has nothing missable on it. If you keep a save per chapter, nothing in this guide can cost you a second playthrough.</p>
+</section>
+
+<section id="view-sources" class="view" hidden>
+  <h2>Sources &amp; verification</h2>
+  <p class="lede">Every trophy name, description and grade in this guide was checked on 19 November 2026 against the PS5 list as reported by Exophase, and cross-checked on GTABase, Output Lag and Press Start — all four agree on all 55. The guides are written in this guide&rsquo;s own words; a source is cited, never copied. A link below opens only if you follow it — this app fetches nothing.</p>
+  <ul class="source-list" id="sourceList"></ul>
+  <h3>What is not yet known</h3>
+  <p>Five trophies had <strong>no confirmed unlock method at launch</strong>: <em>In The Beginning…</em>, <em>Capital Offense</em>, <em>Bad Luck, I Guess</em>, <em>The Truth Is Out There</em> and <em>Ten Pin</em>. This guide says so on each of them instead of inventing a method. <em>Fair Game</em>&rsquo;s exact triggering animal was also unconfirmed. Methods for the other 50 trophies come from the two launch-week guides above.</p>
+  <h3>About this guide</h3>
+  <p>An independent, offline fan guide. Grand Theft Auto VI is by Rockstar Games; this guide uses no Rockstar logo, official artwork, box art or game screenshot. Trophy names and descriptions are shown as PlayStation publishes them.</p>
+</section>
+
+<footer>
+  <p>Leonida Trophy Guide · Grand Theft Auto VI (PS5) · 55 trophies · checked 19 November 2026 · works with the network off · MIT licence</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
